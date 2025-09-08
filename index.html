@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Showtime Watches - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="topbar">
+        <h3>Call: 022-67890543 | Email: st.support@twelve.com</h3>
+    </div>
+    <div class="navbar">
+        <img src="proimg/Showtime.png" alt="Showtime Logo" width="175" height="45">
+        <input type="text" id="searchInput" placeholder="Search watches...">
+        <button id="cartBtn">🛒 Cart</button>
+    </div>
+</header>
+
+<div class="slider">
+    <img src="proimg/fstrck ovrvw pm2.webp" class="slide active" alt="Banner 1">
+    <img src="proimg/fstrck ovrvw lm1.webp" class="slide" alt="Banner 2">
+    <img src="proimg/fstrck ovrvw lm2.webp" class="slide" alt="Banner 3">
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+<section id="filters">
+    <label>Filter by Price:</label>
+    <select id="priceFilter">
+        <option value="all">All</option>
+        <option value="low">Below ₹5000</option>
+        <option value="mid">₹5000 - ₹10000</option>
+        <option value="high">Above ₹10000</option>
+    </select>
+</section>
+
+<section id="products">
+    <div class="product" data-name="Fastrack Radiant FX4" data-price="5998" data-desc="Tough and durable design, perfect for outdoor activities.">
+        <img src="proimg/fstrck ovrvw lm2.webp" alt="Watch 1">
+        <p>Fastrack Radiant FX4</p>
+        <p>₹ 5,998</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Fossil Dezire FX1" data-price="4198" data-desc="Tough and durable design, perfect for outdoor activities.">
+        <img src="proimg/fstrck ovrvw pm2.webp" alt="Watch 2">
+        <p>Fossil Dezire FX1</p>
+        <p>₹ 4,198</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Titan Xtreme Pro" data-price="11198" data-desc="Tough and durable design, perfect for outdoor activities.">
+        <img src="proimg/fstrck ovrvw pm.webp" alt="Watch 3">
+        <p>Titan Xtreme Pro</p>
+        <p>₹ 11,198</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Titan Xtreme Pro" data-price="11198" data-desc="Tough and durable design, perfect for outdoor activities.">
+        <img src="proimg/fstrck ovrvw pm.webp" alt="Watch 3">
+        <p>Titan Xtreme Pro</p>
+        <p>₹ 11,198</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div> 
+</section>
+
+<!-- No Results Message -->
+<p id="noResults" style="text-align:center; display:none;">No products found.</p>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar">
+    <h2>Your Cart 
+    <button id="closeCart" style="float:right; background:red; color:white; border:none; cursor:pointer;">X</button>
+
+    </h2>
+    <div id="cartItems"></div>
+</div>
+<!-- Product Details Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <img id="modalImg" src="" alt="Product Image">
+    <h2 id="modalName"></h2>
+    <p id="modalPrice"></p>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Showtime Watches. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
